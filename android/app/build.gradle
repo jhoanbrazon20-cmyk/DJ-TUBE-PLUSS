@@ -1,15 +1,16 @@
-plugins {
-    id 'com.android.application'
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.4.2'
+    }
 }
 
-android {
-    namespace 'com.djjoafficial.djtubeplus'
-    compileSdk 33
-    defaultConfig {
-        applicationId 'com.djjoafficial.djtubeplus'
-        minSdk 22
-        targetSdk 33
-        versionCode 1
-        versionName "1.0"
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
     }
 }
