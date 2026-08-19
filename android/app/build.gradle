@@ -1,15 +1,14 @@
 plugins {
-    id 'com.android.application'
+    id 'com.android.application' version '7.4.2'
 }
 
 android {
     namespace 'com.djjoafficial.djtubeplus'
-    compileSdk 33
+    compileSdk 34
     defaultConfig {
         applicationId 'com.djjoafficial.djtubeplus'
-        minSdk 22
-        targetSdk 33
+        minSdk 24
+        targetSdk 34
         versionCode 1
         versionName "1.0"
     }
-}
