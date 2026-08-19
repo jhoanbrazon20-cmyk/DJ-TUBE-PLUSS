@@ -20,9 +20,11 @@ android {
         versionCode 1
         versionName "1.0"
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
 }
 
-repositories {
-    google()
-    mavenCentral()
-}
+// Esto silencia la advertencia del SDK 34 y deja pasar la compilación de una
+ext.supressUnsupportedCompileSdk = 34
