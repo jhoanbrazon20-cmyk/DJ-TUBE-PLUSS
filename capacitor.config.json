@@ -2,5 +2,8 @@
   "appId": "com.djjoafficial.djtubeplus",
   "appName": "DJ-TUBE-PLUS",
   "webDir": "dist",
-  "bundledWebRuntime": false
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "https"
+  }
 }
