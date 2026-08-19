@@ -8,9 +8,21 @@ buildscript {
     }
 }
 
-allprojects {
-    repositories {
-        google()
-        mavenCentral()
+apply plugin: 'com.android.application'
+
+android {
+    namespace 'com.djjoafficial.djtubeplus'
+    compileSdk 34
+    defaultConfig {
+        applicationId 'com.djjoafficial.djtubeplus'
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
     }
+}
+
+repositories {
+    google()
+    mavenCentral()
 }
